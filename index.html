@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App - Open Meteo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="header">
+    <div class="logo">Weather-Web</div>
+    <button onclick="toggleTheme()" id="theme-toggle">🌙</button>
+  </div>
+  <div class="container">
+    <!-- Input section -->
+    <input type="text" id="city" placeholder="Enter city name" />
+    <button onclick="getWeather()" class="main-btn">Get Weather</button>
+    <!-- Message area -->
+    <div id="message"></div>
+    <!-- Weather details card -->
+    <div class="weather-info">
+      <h2 id="location"></h2>
+      <p id="condition"></p>
+      <div id="temp-container">
+        <p id="temperature"></p>
+        <button style="margin-left: 40px;" onclick="toggleTemperature()" id="temp-toggle">Toggle</button>
+      </div>
+      <p id="humidity"></p>
+      <p id="wind-speed"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
